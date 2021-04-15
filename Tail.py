@@ -32,7 +32,7 @@ class Tail(object):
         if self.son is not None:
             self.son.follow(self.previous_pos)
 
-        self.eat_tail()
+        self.eat_tail()  #  eats the tail if colliding
 
     def grow(self):
         self.size += 1
